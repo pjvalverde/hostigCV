@@ -10,7 +10,16 @@
 ---------------------------------------------------------------------------------
 */
 
-
+ .container {
+            position: fixed;
+            top: 20%;
+            left: 28%;
+            margin-top: -65px;
+            margin-left: -100px;
+            border-radius: 7px;
+  }
+  
+       
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
