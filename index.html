@@ -15,6 +15,7 @@
 <body>
 
 <div id="doc2" class="yui-t7">
+	<button id="pdfButton"><b>bajar en PDF</b></button>
 	<div id="inner">
 	
 		<div id="hd">
@@ -26,7 +27,7 @@
 
 				<div class="yui-u">
 					<div class="contact-info">
-						<h3><a id="pdf" href="https://pjvalverde.github.io/hostigCV/">Download PDF</a></h3>
+						
 						<h3><a href="mailto:name@yourdomain.com">pblvalverde@gmail.com</a></h3>
 						<h3>0989329313</h3>
 					</div><!--// .contact-info -->
@@ -164,6 +165,18 @@
 
 
 </div><!--// doc -->
+	<script>
+      var button = document.getElementById("pdfButton");
+      var makepdf = document.getElementById("inner");
+      button.addEventListener("click", function () {
+         var mywindow = window.open("", "PRINT", "height=600,width=600");
+         mywindow.document.write(makepdf.innerHTML);
+         mywindow.document.close();
+         mywindow.focus();
+         mywindow.print();
+         return true;
+      });
+   </script>
 
 
 </body>
